@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BlockChainApp</string>
+    <string name="myName">Kevin F. Carrillo</string>
+    <string name="appDescription">Inicia una nueva aventura con BlockChainApp y descubre una nueva forma de ver el mundo.</string>
+    <string name="beginButtonText">Comienza</string>
+    <string name="registrate">Registrate</string>
+</resources>
