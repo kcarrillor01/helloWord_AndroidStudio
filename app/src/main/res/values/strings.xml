@@ -4,4 +4,9 @@
     <string name="appDescription">Inicia una nueva aventura con BlockChainApp y descubre una nueva forma de ver el mundo.</string>
     <string name="beginButtonText">Comienza</string>
     <string name="registrate">Registrate</string>
+    <string name="textoInicioSesion">La aventura está por iniciar, por favor inicia sesión\n</string>
+    <string name="textoBotonLogin">Ingresar\n</string>
+    <string name="recuperarPassword">Recupera tu contraseña</string>
+    <string name="noTienesCuenta">No tienes cuenta? Regístrate</string>
+    <string name="loginGoogle">Ingresa con Google</string>
 </resources>
