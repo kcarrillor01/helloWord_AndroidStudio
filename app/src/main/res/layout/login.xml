@@ -118,15 +118,6 @@
         app:layout_constraintVertical_bias="0.02"
         app:srcCompat="@drawable/logo" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="372dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
