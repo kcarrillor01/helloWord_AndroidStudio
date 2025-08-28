@@ -10,7 +10,7 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="437dp"
+        android:layout_width="391dp"
         android:layout_height="63dp"
         android:fontFamily="cursive"
         android:text="@string/myName"
@@ -27,17 +27,17 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="432dp"
-        android:layout_height="152dp"
+        android:layout_width="374dp"
+        android:layout_height="93dp"
         android:fontFamily="@font/agbalumo"
         android:text="@string/app_name"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="60sp"
+        android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.0" />
@@ -46,6 +46,7 @@
         android:id="@+id/imageView"
         android:layout_width="201dp"
         android:layout_height="258dp"
+        android:contentDescription="@string/descripcionLogo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"

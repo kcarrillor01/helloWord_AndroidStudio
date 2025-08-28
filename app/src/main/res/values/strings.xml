@@ -9,4 +9,6 @@
     <string name="recuperarPassword">Recupera tu contraseña</string>
     <string name="noTienesCuenta">No tienes cuenta? Regístrate</string>
     <string name="loginGoogle">Ingresa con Google</string>
+    <string name="descripcionLogo">logo</string>
+    <string name="descripcionIconos">iconos usuario y contrasena</string>
 </resources>
