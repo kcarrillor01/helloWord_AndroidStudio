@@ -11,4 +11,6 @@
     <string name="loginGoogle">Ingresa con Google</string>
     <string name="descripcionLogo">logo</string>
     <string name="descripcionIconos">iconos usuario y contrasena</string>
+    <string name="textoUsuario">Usuario</string>
+    <string name="claveHint">Contraseña</string>
 </resources>
