@@ -13,4 +13,16 @@
     <string name="descripcionIconos">iconos usuario y contrasena</string>
     <string name="textoUsuario">Usuario</string>
     <string name="claveHint">Contraseña</string>
+    <string name="crear_cuenta">Crea una cuenta</string>
+    <string name="hint_nombre">nombre</string>
+    <string name="hint_apellido">apellidos</string>
+    <string name="hint_anio_nacimiento">Fecha de nacimiento</string>
+    <string name="hint_usuario">Usuario</string>
+    <string name="hint_clave">Contraseña</string>
+    <string name="textoBotonRegister">Registrarse</string>
+    <string name="ya_tengo_cuenta">ya tengo una cuenta</string>
+    <string name="anio_nacimiento_label">Fecha de nacimiento</string>
+    <string name="usuario_label">Nombre de usuario:</string>
+    <string name="recuperarPassword_subtitle">ingresa tu usuario</string>
+    <string name="enviar_recuperacion">Recuperar contraseña</string>
 </resources>
