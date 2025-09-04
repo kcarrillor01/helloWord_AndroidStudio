@@ -25,4 +25,7 @@
     <string name="usuario_label">Nombre de usuario:</string>
     <string name="recuperarPassword_subtitle">ingresa tu usuario</string>
     <string name="enviar_recuperacion">Recuperar contraseña</string>
+    <string name="anio">1999</string>
+    <string name="nombre_apellido">Nombre Apellido</string>
+    <string name="usuario">usuarioEjemplo@gmail.com\n</string>
 </resources>

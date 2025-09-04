@@ -6,9 +6,6 @@
     android:layout_height="match_parent"
     android:background="@color/background_color">
 
-    <!-- Línea separadora -->
-
-    <!-- Detalles: Año de nacimiento -->
 
     <TextView
         android:id="@+id/textProfileName"
@@ -16,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="164dp"
         android:fontFamily="@font/agbalumo"
-        android:text="Nombre Apellido"
+        android:text="@string/nombre_apellido"
         android:textColor="@color/white"
         android:textSize="28sp"
         android:textStyle="bold"
@@ -31,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:fontFamily="@font/actor"
-        android:text="usuario@ejemplo.com"
+        android:text="@string/usuario"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,7 +71,7 @@
         android:layout_marginTop="328dp"
         android:layout_marginEnd="36dp"
         android:fontFamily="@font/actor"
-        android:text="1990"
+        android:text="@string/anio"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -98,16 +95,16 @@
 
     <TextView
         android:id="@+id/textProfileUserSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="206dp"
+        android:layout_height="22dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="36dp"
         android:fontFamily="@font/actor"
-        android:text="usuario@ejemplo.com"
+        android:text="@string/usuario"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/labelUsuario"
         app:layout_constraintTop_toBottomOf="@id/textBirthYear" />
 
