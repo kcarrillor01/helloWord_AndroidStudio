@@ -10,7 +10,7 @@ class RecoverPasswordActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.recover_password)
+        setContentView(R.layout.activity_recover_password)
 
         val etEmail = findViewById<EditText>(R.id.editTextRecoverEmail)
         val btnSend = findViewById<Button>(R.id.buttonSendRecover)

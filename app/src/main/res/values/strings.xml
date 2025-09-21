@@ -28,4 +28,5 @@
     <string name="anio">1999</string>
     <string name="nombre_apellido">Nombre Apellido</string>
     <string name="usuario">usuarioEjemplo@gmail.com\n</string>
+    <string name="confirmarClave">Confirma contraseña</string>
 </resources>

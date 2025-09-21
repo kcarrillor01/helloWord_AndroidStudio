@@ -10,7 +10,7 @@ class HomeActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.home)
+        setContentView(R.layout.activity_home)
 
         val btnStart = findViewById<Button>(R.id.buttonStart)
         val linkRegister = findViewById<TextView>(R.id.registrateLink)
