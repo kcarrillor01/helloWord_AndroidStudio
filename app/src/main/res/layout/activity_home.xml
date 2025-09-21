@@ -1,89 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_color"
+    android:fillViewport="true">   <!-- <- clave -->
+
+    <!-- El hijo debe ser match_parent para que los weights funcionen -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
     >
 
-    <TextView
-        android:id="@+id/registrateLink"
-        android:layout_width="244dp"
-        android:layout_height="32dp"
-        android:layout_marginBottom="64dp"
-        android:fontFamily="serif"
-        android:text="@string/registrate"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.52"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonStart"
-        app:layout_constraintVertical_bias="1.0" />
+        <!-- 1) Cabecera: logo + nombre -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|center_horizontal">
 
-    <TextView
-        android:id="@+id/nameText"
-        android:layout_width="368dp"
-        android:layout_height="89dp"
-        android:fontFamily="@font/agbalumo"
-        android:text="@string/app_name"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/descripcionLogo"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/logo" />
 
-    <TextView
-        android:id="@+id/inicioText"
-        android:layout_width="408dp"
-        android:layout_height="104dp"
-        android:fontFamily="@font/actor"
-        android:text="@string/appDescription"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.676" />
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/agbalumo"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="237dp"
-        android:layout_height="206dp"
-        android:contentDescription="@string/descripcionLogo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.219"
-        app:srcCompat="@drawable/logo" />
+        <!-- 2) Descripción -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:paddingHorizontal="24dp">
 
-    <Button
-        android:id="@+id/buttonStart"
-        android:layout_width="221dp"
-        android:layout_height="71dp"
-        android:backgroundTint="@color/white"
-        android:text="@string/beginButtonText"
-        android:textColor="@color/borders_color"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inicioText"
-        app:layout_constraintVertical_bias="0.143"
-        app:strokeColor="@color/borders_color"
-        app:strokeWidth="2dp" />
+            <TextView
+                android:id="@+id/inicioText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/actor"
+                android:text="@string/appDescription"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
+        <!-- Botón + Registrate juntos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="8dp"
+        >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/buttonStart"
+                android:layout_width="260dp"
+                android:layout_height="72dp"
+                android:backgroundTint="@color/white"
+                android:text="@string/beginButtonText"
+                android:textColor="@color/borders_color"
+                android:textSize="18sp"
+                app:strokeColor="@color/borders_color"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                android:id="@+id/registrateLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="serif"
+                android:text="@string/registrate"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
