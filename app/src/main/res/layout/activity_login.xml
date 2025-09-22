@@ -90,7 +90,7 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/editTextTextEmailAddress"
+                    android:id="@+id/loginUser"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
                     android:background="@drawable/edittext_background"
@@ -104,7 +104,7 @@
                    />
 
                 <EditText
-                    android:id="@+id/editTextTextPassword"
+                    android:id="@+id/loginPassword"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
                     android:background="@drawable/edittext_background"
@@ -154,7 +154,7 @@
                 app:iconTint="@null" />
 
             <TextView
-                android:id="@+id/recuperaClave"
+                android:id="@+id/recoverPasswordLink"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
@@ -166,7 +166,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/registrateLink"
+                android:id="@+id/registerLink"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"

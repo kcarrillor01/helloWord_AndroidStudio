@@ -67,7 +67,7 @@
 
 
         <EditText
-                android:id="@+id/editTextNombre"
+                android:id="@+id/registerName"
                 android:layout_width="300dp"
                 android:layout_height="55dp"
                 android:background="@drawable/edittext_background"
@@ -79,7 +79,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
             <EditText
-                android:id="@+id/editTextApellido"
+                android:id="@+id/registerLastName"
                 android:layout_width="300dp"
                 android:layout_height="55dp"
                 android:background="@drawable/edittext_background"
@@ -92,7 +92,7 @@
 
 
             <EditText
-                android:id="@+id/editTextUsuarioRegister"
+                android:id="@+id/registerUser"
                 android:layout_width="300dp"
                 android:layout_height="55dp"
                 android:background="@drawable/edittext_background"
@@ -104,7 +104,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
             <EditText
-                android:id="@+id/editTextPasswordRegister"
+                android:id="@+id/registerPassword"
                 android:layout_width="300dp"
                 android:layout_height="55dp"
                 android:background="@drawable/edittext_background"
@@ -116,12 +116,12 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
             <EditText
-                android:id="@+id/confimarClave"
+                android:id="@+id/registerConfirmPassword"
                 android:layout_width="300dp"
                 android:layout_height="55dp"
                 android:background="@drawable/edittext_background"
                 android:hint="@string/confirmarClave"
-                android:inputType="number"
+                android:inputType="textPassword"
                 android:layout_marginBottom="10dp"
                 android:maxLength="4"
                 android:paddingStart="16dp"
@@ -137,7 +137,7 @@
 
         <Button
             android:id="@+id/buttonRegister"
-            android:layout_width="350dp"
+            android:layout_width="250dp"
             android:layout_height="70dp"
             android:layout_marginTop="76dp"
             android:backgroundTint="@color/white"
